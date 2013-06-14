@@ -1,7 +1,6 @@
 <!-- replace '#product-variants ul' -->
 <div class="variants-buttons">
   <% @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
-
       <%= radio_button_tag "products[#{@product.id}]", variant.id, index == 0, 'data-price' => variant.price_in(current_currency).display_price %>
       <label for="<%= ['products', @product.id, variant.id].join('_') %>">
         <span class="variant-description">
