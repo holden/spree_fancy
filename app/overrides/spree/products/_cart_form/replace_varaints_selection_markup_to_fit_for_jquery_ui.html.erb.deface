@@ -1,5 +1,5 @@
 <!-- replace '#product-variants ul' -->
-<h6 class="product-section-title">Infant Size</h6>
+<h5 class="product-section-title">Infant Size</h5>
 <div class="variants-buttons">
   <% @product.variants.joins(:option_values).where("option_value_id = 2").each_with_index do |variant, index| %>
   <%# @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
@@ -16,7 +16,7 @@
 
   <% end%>
 </div>
-<h6 class="product-section-title">Junior Size</h6>
+<h5 class="product-section-title">Junior Size</h5>
 <div class="variants-buttons">
   <% @product.variants.joins(:option_values).where("option_value_id = 1").each_with_index do |variant, index| %>
   <%# @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
