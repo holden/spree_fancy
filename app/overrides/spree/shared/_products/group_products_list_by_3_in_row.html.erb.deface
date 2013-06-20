@@ -9,6 +9,7 @@
               <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
             </div>
             <%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %>
+            Junior Starter Packs (3 meals) from:
             <span class="price selling" itemprop="price"><%= product.price_in(current_currency).display_price %></span>
           </li>
         <% end %>

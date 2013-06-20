@@ -7,11 +7,9 @@
       <label for="<%= ['products', @product.id, variant.id].join('_') %>">
         <span class="variant-description">
           <%#= variant_options variant %>
-          <%= variant.option_values.last.presentation %>
+          <%= variant.option_values.last.presentation %>:
         </span>
-        <% if variant_price variant %>
-          <span class="price diff"><%= variant_price variant %></span>
-        <% end %>
+        <span class="price diff"><%= variant_full_price variant %></span>
       </label>
 
   <% end%>
@@ -26,9 +24,7 @@
           <%#= variant_options variant %>
           <%= variant.option_values.last.presentation %>
         </span>
-        <% if variant_price variant %>
-          <span class="price diff"><%= variant_price variant %></span>
-        <% end %>
+        <span class="price diff"><%= variant_full_price variant %></span>
       </label>
 
   <% end%>
