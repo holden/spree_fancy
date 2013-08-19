@@ -1,2 +1,3 @@
 remove '#product-price .product-section-title'
 remove '#product-variants h6.product-section-title'
+remove '#product-section-title'
